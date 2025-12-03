@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Simple Website</title>
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(135deg, #dfe9f3, #ffffff);
+            margin: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(to right, #141e30, #243b55);
+            padding: 18px;
+            text-align: center;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 19px;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: #5762ff;
+            color: #222;
+            box-shadow: 0 0 10px #ff5795;
+        }
+
+        /* Login Form Container */
+        .form-container {
+            width: 380px;
+            background: white;
+            margin: 80px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            margin-bottom: 20px;
+            border-radius: 12px; /* curved input */
+            border: 1px solid #bbb;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #243b55;
+            box-shadow: 0 0 10px rgba(36,59,85,0.3);
+            outline: none;
+        }
+
+        /* Button */
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(to right, #243b55, #141e30);
+            box-shadow: 0 8px 20px rgba(36,59,85,0.5);
+        }
+
+        .note {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 18px;
+            color: #555;
+        }
+
+        .note a {
+            text-decoration: none;
+            color: #243b55;
+            font-weight: 600;
+        }
+
+        .note a:hover {
+            color: #ff6600;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <!-- Login Box -->
+    <div class="form-container">
+        <h2>Login</h2>
+
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="Enter email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password">
+
+            <label>Phone Number</label>
+            <input type="phone number" placeholder="Enter phone number">
+
+
+            <button class="btn">Login</button>
+        </form>
+
+        <p class="note">
+            New user? <a href="register.html">Register here</a>
+        </p>
+    </div>
+
+</body>
+</html>
+
